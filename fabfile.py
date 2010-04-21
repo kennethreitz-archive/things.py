@@ -9,7 +9,7 @@ def init():
     """ Initialize a virtualenv in which to run tests against this
     """
     local("virtualenv .")
-    local("pip install -E . fabric lxml nose")
+    local("pip install -E . fabric lxml nose opster")
 
 def activate():
 	""" Activate local virtualenv
