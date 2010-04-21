@@ -1,0 +1,43 @@
+things.py    --    python gets things done. 
+===============
+
+NAME
+
+
+## Requires
+
+## Ruby Library
+
+
+	things = Things.new # will use Things' default database location. 
+	# things = Things.new(:database => '/path/to/Database.xml')
+
+	tasks = things.today.map do |task|
+	  tags    = "(#{task.tags.join(' ')})" if task.tags?
+	  project = "[#{task.parent}]" if task.parent?
+	  [task.bullet, task.title, tags, project].compact.join(" ")
+	end
+
+	puts tasks.compact.sort.join("\n")
+
+## cli
+
+	$ things
+	$ things --help
+	$ things today
+	$ things --all today
+	$ things --database /path/to/Database.xml
+	$ things --all next
+	$ things logbook
+	$ things -t errands today
+
+
+Installation
+------------
+
+	pip install things
+	
+Or, if you must, 
+
+	python setup.py install
+
