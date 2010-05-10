@@ -1,4 +1,4 @@
-things.py    --    python gets things done. 
+things.py    --    Python interface for CultredCode's Things.app. 
 ===============
 
 NAME

@@ -22,7 +22,6 @@ def clean():
     local("find . -name "*.pyc" -exec rm '{}' ';'")
 
 def scrub():
-    """
-    Remove the cruft created by virtualenv and pip
+    """ Remove the cruft created by virtualenv and pip
     """
     local("rm -fr bin/ include/ lib/")
