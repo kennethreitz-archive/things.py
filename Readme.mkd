@@ -1,7 +1,7 @@
 things.py    --    Python interface for CultredCode's Things.app. 
 ===============
 
-NAME
+Warning: This project is in development. Features not yet complete. 
 
 
 ## Requires
